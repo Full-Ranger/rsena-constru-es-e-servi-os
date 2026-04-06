@@ -39,20 +39,20 @@
         </div>
     </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
+    <!-- Hero / Page Início -->
+    <section id="home" class="hero page-section active-page">
         <div class="hero-content reveal">
             <h1>Construindo Sonhos com <span style="color: var(--secondary-yellow);">Precisão</span></h1>
             <p>Especialistas em obras residenciais e comerciais em Cuiabá. Qualidade, prazo e a confiança de quem entende do canteiro de obras.</p>
             <div class="cta-group">
-                <a href="#obras" class="btn-primary">Ver Portfólio</a>
-                <a href="#contato" class="btn-secondary">Falar com Ivanildo</a>
+                <a href="#obras" class="btn-primary nav-trigger">Ver Portfólio</a>
+                <a href="#contato" class="btn-secondary nav-trigger">Falar com Ivanildo</a>
             </div>
         </div>
     </section>
 
-    <!-- History / About -->
-    <section id="historia">
+    <!-- History / Page História -->
+    <section id="historia" class="page-section">
         <div class="history-grid">
             <div class="history-img reveal">
                 <img src="assets/img/8-MestreDeObras.jpg" alt="Mestre de Obras Ivanildo">
@@ -61,18 +61,14 @@
                 <div class="section-title" style="text-align: left;">
                     <h2>Duas Décadas de Excelência Técnica</h2>
                 </div>
-                <p>Com mais de <strong>20 anos de atuação</strong> no mercado, a R-SENA Construções e Serviços, sob a liderança do <strong>Mestre Ivanildo</strong>, tornou-se sinônimo de confiança e precisão em Mato Grosso. Nossa história é construída tijolo por tijolo em obras que desafiam o convencional.</p>
-                <br>
-                <p>O que começou em Cuiabá expandiu-se para diversas cidades do estado, atendendo a demandas complexas com a mesma maestria — seja no luxo do <strong>Projeto Itália</strong>, na infraestrutura da <strong>Obra Televideo</strong>, ou em refúgios exclusivos como na <strong>Reserva do Manso</strong>.</p>
+                <p>Com mais de <strong>20 anos de atuação</strong> no mercado, a R-SENA Construções e Serviços, sob a liderança do <strong>Mestre Ivanildo</strong>, tornou-se sinônimo de confiança e precisão em Mato Grosso.</p>
                 <br>
                 <p>Nossa versatilidade nos permite atuar em diferentes regiões, levando a marca R-SENA para o interior, como em <strong>Juína</strong>, e garantindo que cada sonho saia da planta com o rigor e a qualidade de quem conhece profundamente o canteiro de obras há mais de duas décadas.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Services -->
-    <section style="background: var(--grey-light); max-width: 100%;">
-        <div style="max-width: 1200px; margin: 0 auto;">
+        
+        <!-- Services (Integrated into History Page) -->
+        <div style="margin-top: 80px;">
             <div class="section-title">
                 <h2>O que fazemos</h2>
             </div>
@@ -80,160 +76,138 @@
                 <div class="service-card reveal">
                     <i class="fas fa-hammer"></i>
                     <h3>Construção Civil</h3>
-                    <p>Do alicerce ao acabamento em obras residenciais (Itália, Manso) e comerciais (Centro).</p>
+                    <p>Do alicerce ao acabamento em obras residenciais e comerciais.</p>
                 </div>
                 <div class="service-card reveal">
                     <i class="fas fa-paint-roller"></i>
                     <h3>Reformas em Geral</h3>
-                    <p>Modernização estrutural e revitalização de fachadas com foco em durabilidade.</p>
+                    <p>Modernização estrutural e revitalização de fachadas.</p>
                 </div>
                 <div class="service-card reveal">
                     <i class="fas fa-hard-hat"></i>
                     <h3>Gestão de Obras</h3>
-                    <p>Acompanhamento de ponta a ponta, reduzindo custos e otimizando o cronograma em MT.</p>
+                    <p>Acompanhamento de ponta a ponta, reduzindo custos e atrasos.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio / Works -->
-    <section id="obras">
+    <!-- Portfolio / Page Obras -->
+    <section id="obras" class="page-section">
         <div class="section-title">
             <h2>Nossa Trajetória</h2>
-            <p>Clique em um projeto para ver os detalhes da execução</p>
+            <p>Selecione um projeto para ver a galeria completa de fotos</p>
         </div>
         <div class="portfolio-grid">
             <!-- Obra Itália -->
             <div class="portfolio-item reveal" 
                  data-title="Projeto Itália" 
-                 data-description="Residência de altíssimo padrão com foco em arquitetura neoclássica e acabamentos em mármore. Executamos desde a fundação até o detalhamento de gesso e pintura fina."
+                 data-description="Residência de altíssimo padrão com foco em arquitetura neoclássica e acabamentos em mármore. Execução completa da fundação ao acabamento fino."
                  data-location="Cuiabá - MT"
-                 data-img="assets/img/10-ObraItalia.jpg">
+                 data-img="assets/img/10-ObraItalia.jpg"
+                 data-images="assets/img/10-ObraItalia.jpg,assets/img/3-ObraItalia.jpg,assets/img/4-ObraItalia.jpg,assets/img/5-ObraItalia.jpg,assets/img/6-ObraItalia.jpg,assets/img/7-ObraItalia.jpg,assets/img/11-ObraItalia.jpg,assets/img/12-ObraItalia.jpg">
                 <img src="assets/img/10-ObraItalia.jpg" alt="Projeto Itália">
                 <div class="portfolio-overlay">
                     <h3>Projeto Itália</h3>
-                    <span>Ver detalhes <i class="fas fa-plus"></i></span>
+                    <span>Ver Galeria <i class="fas fa-images"></i></span>
                 </div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Projeto Itália" data-description="Detalhes da fundação e estrutura reforçada para suporte de grandes vãos arquitetônicos." data-location="Cuiabá - MT" data-img="assets/img/3-ObraItalia.jpg">
-                <img src="assets/img/3-ObraItalia.jpg" alt="Projeto Itália">
-                <div class="portfolio-overlay"><h3>Projeto Itália</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Projeto Itália" data-description="Execução de alvenaria estrutural com precisão milimétrica." data-location="Cuiabá - MT" data-img="assets/img/4-ObraItalia.jpg">
-                <img src="assets/img/4-ObraItalia.jpg" alt="Projeto Itália">
-                <div class="portfolio-overlay"><h3>Projeto Itália</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Projeto Itália" data-description="Instalações hidráulicas e elétricas de alta complexidade." data-location="Cuiabá - MT" data-img="assets/img/5-ObraItalia.jpg">
-                <img src="assets/img/5-ObraItalia.jpg" alt="Projeto Itália">
-                <div class="portfolio-overlay"><h3>Projeto Itália</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Projeto Itália" data-description="Acabamentos finos e detalhamento de fachadas." data-location="Cuiabá - MT" data-img="assets/img/6-ObraItalia.jpg">
-                <img src="assets/img/6-ObraItalia.jpg" alt="Projeto Itália">
-                <div class="portfolio-overlay"><h3>Projeto Itália</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Projeto Itália" data-description="Revestimentos premium e controle de qualidade rigoroso." data-location="Cuiabá - MT" data-img="assets/img/7-ObraItalia.jpg">
-                <img src="assets/img/7-ObraItalia.jpg" alt="Projeto Itália">
-                <div class="portfolio-overlay"><h3>Projeto Itália</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Projeto Itália" data-description="Vista frontal da obra em fase de finalização." data-location="Cuiabá - MT" data-img="assets/img/11-ObraItalia.jpg">
-                <img src="assets/img/11-ObraItalia.jpg" alt="Projeto Itália">
-                <div class="portfolio-overlay"><h3>Projeto Itália</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Projeto Itália" data-description="Entrega técnica e limpeza pós-obra." data-location="Cuiabá - MT" data-img="assets/img/12-ObraItalia.jpg">
-                <img src="assets/img/12-ObraItalia.jpg" alt="Projeto Itália">
-                <div class="portfolio-overlay"><h3>Projeto Itália</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
             </div>
 
             <!-- Obra Televideo -->
             <div class="portfolio-item reveal"
                  data-title="Obra Televideo"
-                 data-description="Instalações comerciais e infraestrutura tecnológica. Foco em rapidez de execução sem perder a segurança."
+                 data-description="Instalações comerciais e infraestrutura tecnológica. Especializada em ambientes de alta tecnologia e datacenter."
                  data-location="Centro, Cuiabá"
-                 data-img="assets/img/20-ObraTelevideo.jpg">
+                 data-img="assets/img/20-ObraTelevideo.jpg"
+                 data-images="assets/img/20-ObraTelevideo.jpg,assets/img/21-ObraTelevideo.jpg">
                 <img src="assets/img/20-ObraTelevideo.jpg" alt="Obra Televideo">
                 <div class="portfolio-overlay">
                     <h3>Obra Televideo</h3>
-                    <span>Ver detalhes <i class="fas fa-plus"></i></span>
+                    <span>Ver Galeria <i class="fas fa-images"></i></span>
                 </div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Obra Televideo" data-description="Adaptação de espaços para datacenter e redes de comunicação." data-location="Centro, Cuiabá" data-img="assets/img/21-ObraTelevideo.jpg">
-                <img src="assets/img/21-ObraTelevideo.jpg" alt="Obra Televideo">
-                <div class="portfolio-overlay"><h3>Obra Televideo</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
             </div>
 
             <!-- Obra Manso -->
             <div class="portfolio-item reveal"
                  data-title="Reserva do Manso"
-                 data-description="Construção de lazer em terreno complexo. Logística diferenciada para garantir o prazo em área de veraneio."
+                 data-description="Construção de lazer em terreno complexo. Logística diferenciada para garantir o padrão R-SENA em área de difícil acesso."
                  data-location="Lago do Manso - MT"
-                 data-img="assets/img/13-ObraManso.jpg">
+                 data-img="assets/img/13-ObraManso.jpg"
+                 data-images="assets/img/13-ObraManso.jpg">
                 <img src="assets/img/13-ObraManso.jpg" alt="Obra Manso">
                 <div class="portfolio-overlay">
                     <h3>Reserva do Manso</h3>
-                    <span>Ver detalhes <i class="fas fa-plus"></i></span>
+                    <span>Ver Galeria <i class="fas fa-images"></i></span>
                 </div>
             </div>
 
             <!-- Obra Juína -->
             <div class="portfolio-item reveal"
                  data-title="Expansão Juína"
-                 data-description="Obra de escala média no interior do estado. Logística de materiais para garantir a qualidade fora da capital."
+                 data-description="Obra de escala média no interior do estado. Provamos nossa capacidade logística de mobilizar equipe e materiais para garantir a qualidade fora da capital."
                  data-location="Juína - MT"
-                 data-img="assets/img/14-ObraJuina.jpg">
+                 data-img="assets/img/14-ObraJuina.jpg"
+                 data-images="assets/img/14-ObraJuina.jpg,assets/img/15-ObraJuina.jpg">
                 <img src="assets/img/14-ObraJuina.jpg" alt="Obra Juína">
                 <div class="portfolio-overlay">
                     <h3>Expansão Juína</h3>
-                    <span>Ver detalhes <i class="fas fa-plus"></i></span>
+                    <span>Ver Galeria <i class="fas fa-images"></i></span>
                 </div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Expansão Juína" data-description="Execução de pavimentação e calçadas em área urbana no interior." data-location="Juína - MT" data-img="assets/img/15-ObraJuina.jpg">
-                <img src="assets/img/15-ObraJuina.jpg" alt="Obra Juína">
-                <div class="portfolio-overlay"><h3>Expansão Juína</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
             </div>
 
             <!-- Centro Sul -->
             <div class="portfolio-item reveal"
                  data-title="Reforma Centro Sul"
-                 data-description="Revitalização de espaço comercial com troca de pisos e pintura corporativa."
-                 data-location="Cuiabá"
-                 data-img="assets/img/16-ObraCentroSul.jpg">
+                 data-description="Revitalização de espaço comercial com troca de fachadas, pisos e instalações elétricas corporativas."
+                 data-location="Cuiabá - MT"
+                 data-img="assets/img/16-ObraCentroSul.jpg"
+                 data-images="assets/img/16-ObraCentroSul.jpg,assets/img/17-ObraCentroSul.jpg">
                 <img src="assets/img/16-ObraCentroSul.jpg" alt="Obra Centro Sul">
                 <div class="portfolio-overlay">
                     <h3>Centro Sul</h3>
-                    <span>Ver detalhes <i class="fas fa-plus"></i></span>
+                    <span>Ver Galeria <i class="fas fa-images"></i></span>
                 </div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Reforma Centro Sul" data-description="Acabamento de interiores e iluminação técnica comercial." data-location="Cuiabá" data-img="assets/img/17-ObraCentroSul.jpg">
-                <img src="assets/img/17-ObraCentroSul.jpg" alt="Obra Centro Sul">
-                <div class="portfolio-overlay"><h3>Centro Sul</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
             </div>
 
             <!-- Centro Norte -->
-            <div class="portfolio-item reveal" data-title="Obra Centro Norte" data-description="Instalações e manutenção em infraestrutura comercial sólida." data-location="Cuiabá" data-img="assets/img/18-ObraCentroNorte.jpg">
+            <div class="portfolio-item reveal"
+                 data-title="Obra Centro Norte"
+                 data-description="Manutenção estrutural e reformas em edifícios comerciais no centro da capital."
+                 data-location="Cuiabá - Centro"
+                 data-img="assets/img/18-ObraCentroNorte.jpg"
+                 data-images="assets/img/18-ObraCentroNorte.jpg,assets/img/19-ObraCentroNorte.jpg">
                 <img src="assets/img/18-ObraCentroNorte.jpg" alt="Obra Centro Norte">
-                <div class="portfolio-overlay"><h3>Obra Centro Norte</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
-            </div>
-            <div class="portfolio-item reveal" data-title="Obra Centro Norte" data-description="Reparos estruturais e revitalização de fachada no centro comercial." data-location="Cuiabá" data-img="assets/img/19-ObraCentroNorte.jpg">
-                <img src="assets/img/19-ObraCentroNorte.jpg" alt="Obra Centro Norte">
-                <div class="portfolio-overlay"><h3>Obra Centro Norte</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
+                <div class="portfolio-overlay">
+                    <h3>Centro Norte</h3>
+                    <span>Ver Galeria <i class="fas fa-images"></i></span>
+                </div>
             </div>
 
             <!-- Obra Muro -->
-            <div class="portfolio-item reveal" data-title="Muro de Arrimo" data-description="Execução de muro de contenção com drenagem e segurança estrutural máxima." data-location="Cuiabá - MT" data-img="assets/img/22-ObraMuro.jpg">
+            <div class="portfolio-item reveal"
+                 data-title="Contenção e Muros"
+                 data-description="Engenharia de contenção e muros de arrimo com foco em segurança e drenagem eficiente."
+                 data-location="Cuiabá - MT"
+                 data-img="assets/img/22-ObraMuro.jpg"
+                 data-images="assets/img/22-ObraMuro.jpg">
                 <img src="assets/img/22-ObraMuro.jpg" alt="Obra Muro">
-                <div class="portfolio-overlay"><h3>Obra Muro</h3><span>Ver detalhes <i class="fas fa-plus"></i></span></div>
+                <div class="portfolio-overlay">
+                    <h3>Muro de Arrimo</h3>
+                    <span>Ver Galeria <i class="fas fa-images"></i></span>
+                </div>
             </div>
 
             <!-- Calçada -->
             <div class="portfolio-item reveal"
                  data-title="Infraestrutura Urbana"
-                 data-description="Pavimentação e calçamento técnico com foco em acessibilidade e escoamento pluvial."
+                 data-description="Pavimentação técnica e calçadas com foco em acessibilidade urbana no centro de Cuiabá."
                  data-location="Cuiabá - Centro"
-                 data-img="assets/img/9-Calçada-Centro.jpg">
+                 data-img="assets/img/9-Calçada-Centro.jpg"
+                 data-images="assets/img/9-Calçada-Centro.jpg">
                 <img src="assets/img/9-Calçada-Centro.jpg" alt="Calçada Centro">
                 <div class="portfolio-overlay">
                     <h3>Infraestrutura Urbana</h3>
-                    <span>Ver detalhes <i class="fas fa-plus"></i></span>
+                    <span>Ver Galeria <i class="fas fa-images"></i></span>
                 </div>
             </div>
         </div>
@@ -246,6 +220,9 @@
             <div class="modal-body">
                 <div class="modal-img-container">
                     <img id="modal-img" src="" alt="Projeto Detalhe">
+                    <div id="modal-gallery" class="modal-gallery">
+                        <!-- Thumbnails will be injected here -->
+                    </div>
                 </div>
                 <div class="modal-info">
                     <h2 id="modal-title">Título</h2>
@@ -258,8 +235,8 @@
         </div>
     </div>
 
-    <!-- Contact -->
-    <section id="contato">
+    <!-- Contact / Page Contato -->
+    <section id="contato" class="page-section">
         <div class="contact-container">
             <div class="contact-info reveal">
                 <div class="section-title" style="text-align: left;">

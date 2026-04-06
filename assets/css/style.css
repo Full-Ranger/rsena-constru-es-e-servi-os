@@ -201,10 +201,27 @@ nav a:hover {
 }
 
 /* --- Sections --- */
-section {
+/* --- Page System --- */
+.page-section {
+  display: none;
   padding: 100px 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.page-section.active-page {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sections that should still occupy full width or different backgrounds */
+#home.page-section {
+  max-width: 100%;
+  padding: 0;
 }
 
 .section-title {
@@ -451,6 +468,44 @@ footer {
 .modal-info p {
   color: var(--grey-dark);
   font-size: 1.1rem;
+}
+
+.modal-gallery {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.modal-gallery img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.modal-gallery img:hover {
+  transform: scale(1.05);
+  border-color: var(--secondary-yellow);
+}
+
+.modal-gallery img.active-thumb {
+  border-color: var(--secondary-yellow);
+}
+
+/* Scrollbar for gallery */
+.modal-gallery::-webkit-scrollbar {
+  width: 6px;
+}
+.modal-gallery::-webkit-scrollbar-thumb {
+  background: var(--grey-dark);
+  border-radius: 10px;
 }
 
 body.modal-open {
