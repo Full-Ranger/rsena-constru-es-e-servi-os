@@ -56,6 +56,12 @@ header {
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .logo img {
   height: 45px;
   filter: brightness(1.2);
@@ -63,14 +69,18 @@ header {
 
 .logo-text {
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--white);
   letter-spacing: 1px;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .logo-sub {
   color: var(--secondary-yellow);
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
 }
 
 nav ul {
@@ -96,13 +106,21 @@ nav a:hover {
 .btn-whatsapp-nav {
   background: var(--secondary-yellow);
   color: var(--black) !important;
-  padding: 0.5rem 1.2rem;
-  border-radius: 3px; /* Sharper technical corners */
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-weight: 700;
+  gap: 10px;
+  font-weight: 800;
   font-size: 0.85rem;
+  text-decoration: none;
+  transition: var(--transition);
+  border: 2px solid var(--secondary-yellow);
+}
+
+.btn-whatsapp-nav:hover {
+  background: transparent;
+  color: var(--secondary-yellow) !important;
 }
 
 /* --- Hero Section --- */
@@ -453,8 +471,59 @@ body.modal-open {
 }
 
 /* Responsive */
+@media (max-width: 992px) {
+  .hero-content h1 { font-size: 3.5rem; }
+  nav ul { gap: 20px; }
+}
+
 @media (max-width: 768px) {
-  .hero-content h1 { font-size: 2.5rem; }
-  .history-grid, .contact-container { grid-template-columns: 1fr; }
+  header { padding: 5px 0; }
+  .nav-container { padding: 0.5rem 1.5rem; }
+  
+  .logo img { height: 35px; }
+  .logo-text { font-size: 1rem; }
+  .logo-sub { font-size: 0.6rem; }
+  
+  .btn-whatsapp-nav { 
+    padding: 0.5rem 1rem; 
+    font-size: 0.75rem;
+  }
+  
   nav ul { display: none; }
+  
+  .hero { 
+    padding: 0 2rem;
+    height: 80vh;
+  }
+  .hero-content { padding-left: 20px; }
+  .hero-content h1 { font-size: 2.8rem; }
+  .hero-content p { font-size: 1.1rem; }
+  
+  .cta-group { 
+    flex-direction: column; 
+    gap: 15px;
+  }
+  .btn-primary, .btn-secondary { 
+    padding: 1rem 2rem; 
+    text-align: center;
+    width: 100%;
+  }
+
+  section { padding: 60px 1.5rem; }
+  .section-title h2 { font-size: 2rem; }
+  
+  .history-grid, .contact-container { 
+    grid-template-columns: 1fr; 
+    gap: 40px;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 { font-size: 2.2rem; }
+  .logo-text { display: none; } /* Hide text on very small screens to keep layout clean */
+  .logo { gap: 0; }
 }
