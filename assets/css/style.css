@@ -188,6 +188,45 @@ nav a:hover::after {
   box-shadow: 0 6px 20px rgba(251, 161, 0, 0.4);
 }
 
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  flex-shrink: 0; /* Prevent shrinking in flex containers */
+}
+
+.menu-toggle span {
+  display: block; /* Ensure it's not collapsed */
+  width: 100%;
+  height: 3px;
+  background-color: var(--white);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
 /* --- Hero Section --- */
 .hero {
   height: 100vh;
@@ -932,10 +971,11 @@ footer {
   transform: translateY(0);
 }
 
-/* Responsive */
+/* Responsive Refinement */
 @media (max-width: 1100px) {
   .history-container, .contact-grid, .modal-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
   .modal-grid {
     grid-template-rows: auto auto;
@@ -943,19 +983,148 @@ footer {
   .modal-details {
     border-left: none;
     border-top: 1px solid var(--grey-medium);
+    padding: 30px;
+  }
+  .history-visual {
+    order: -1;
   }
 }
 
 @media (max-width: 768px) {
-  nav ul { display: none; }
-  .hero-content { padding: 0 2rem; }
-  .section-header h2 { font-size: 2.2rem; }
-  .contact-card, .whatsapp-card { padding: 30px; }
+  section {
+    padding: 60px 1.25rem;
+  }
+
+  .nav-container {
+    padding: 0.7rem 1.25rem;
+  }
+
+  /* Hamburger Menu Logic */
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition-normal);
+    z-index: 1000;
+    visibility: hidden; /* Hide when not active to prevent ghost clicks */
+    opacity: 0;
+  }
+
+  nav.active {
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    display: flex;
+    padding: 0;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  .btn-whatsapp-nav {
+    display: none; /* Hide in header, show in menu if needed or hero */
+  }
+
+  .hero-content {
+    padding: 0 1.25rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    padding-left: 0;
+    border-left: none;
+    margin: 0 auto 2rem;
+  }
+
+  .cta-group {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .portfolio-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tab-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card, .whatsapp-card {
+    padding: 40px 20px;
+  }
+
+  .contact-card h2 {
+    font-size: 2.2rem;
+  }
+
   .whatsapp-floating {
     width: 60px;
     height: 60px;
     bottom: 20px;
     right: 20px;
     font-size: 2rem;
+  }
+
+  .experience-tag {
+    bottom: -15px;
+    left: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .highlight-item {
+    padding: 15px;
+  }
+
+  .highlight-item span {
+    font-size: 1.5rem;
   }
 }
