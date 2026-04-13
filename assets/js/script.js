@@ -1,6 +1,6 @@
 /**
  * R-SENA Construções e Serviços
- * Main Script - Premium Interactivity
+ * Main Script - Premium Interactivity (Optimized for WebP)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,25 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Em Execução',
             category: 'execucao',
             description: 'Projeto de reforma integral e modernização completa. Inclui construção de piscina personalizada e criação de área gourmet externa com acabamento de alto padrão de luxo.',
-            mainImg: 'assets/img/IMAGENS/OBRA-EDMUNDO-ITALIA/20260401_123500.jpg',
+            mainImg: 'assets/img/IMAGENS/OBRA-EDMUNDO-ITALIA/20260401_123500.webp',
             folder: 'assets/img/IMAGENS/OBRA-EDMUNDO-ITALIA/',
             images: [
-                '20251124_102048.jpg', '20251128_131219.jpg', '20251128_133150.jpg', '20251202_103048.jpg', 
-                '20251203_163329.jpg', '20251204_132207.jpg', '20251204_132224.jpg', '20251209_164202.jpg', 
-                '20251210_082758.jpg', '20251211_093824.jpg', '20251212_154005.jpg', '20251212_154024.jpg', 
-                '20251212_154037.jpg', '20251212_170513.jpg', '20251212_170538.jpg', '20251218_092808.jpg', 
-                '20251218_092813.jpg', '20251218_105412.jpg', '20251218_105557.jpg', '20260106_104250.jpg', 
-                '20260109_172656.jpg', '20260109_172701.jpg', '20260112_103354.jpg', '20260112_124139.jpg', 
-                '20260113_094428.jpg', '20260113_094433.jpg', '20260116_143548.jpg', '20260116_143556.jpg', 
-                '20260121_152437.jpg', '20260121_152452.jpg', '20260122_082547.jpg', '20260127_142648.jpg', 
-                '20260128_113327.jpg', '20260130_082126.jpg', '20260130_082129.jpg', '20260130_141010.jpg', 
-                '20260210_162456.jpg', '20260218_124723.jpg', '20260309_152009.jpg', '20260311_100731.jpg', 
-                '20260311_100741.jpg', '20260311_140253.jpg', '20260314_081339.jpg', '20260314_081347.jpg', 
-                '20260314_081913.jpg', '20260314_081959.jpg', '20260314_082012.jpg', '20260317_081006.jpg', 
-                '20260317_123917.jpg', '20260317_131333.jpg', '20260317_131337.jpg', '20260319_080853.jpg', 
-                '20260319_100648.jpg', '20260401_123353.jpg', '20260401_123409.jpg', '20260401_123418.jpg', 
-                '20260401_123425.jpg', '20260401_123500.jpg', '20260409_110600.jpg', '20260409_110604.jpg', 
-                '20260409_110610.jpg', '20260409_110617.jpg', '20260409_110701.jpg', '20260409_110718.jpg'
+                '20251124_102048.webp', '20251128_131219.webp', '20251128_133150.webp', '20251202_103048.webp', 
+                '20251203_163329.webp', '20251204_132207.webp', '20251204_132224.webp', '20251209_164202.webp', 
+                '20251210_082758.webp', '20251211_093824.webp', '20251212_154005.webp', '20251212_154024.webp', 
+                '20251212_154037.webp', '20251212_170513.webp', '20251212_170538.webp', '20251218_092808.webp', 
+                '20251218_092813.webp', '20251218_105412.webp', '20251218_105557.webp', '20260106_104250.webp', 
+                '20260109_172656.webp', '20260109_172701.webp', '20260112_103354.webp', '20260112_124139.webp', 
+                '20260113_094428.webp', '20260113_094433.webp', '20260116_143548.webp', '20260116_143556.webp', 
+                '20260121_152437.webp', '20260121_152452.webp', '20260122_082547.webp', '20260127_142648.webp', 
+                '20260128_113327.webp', '20260130_082126.webp', '20260130_082129.webp', '20260130_141010.webp', 
+                '20260210_162456.webp', '20260218_124723.webp', '20260309_152009.webp', '20260311_100731.webp', 
+                '20260311_100741.webp', '20260311_140253.webp', '20260314_081339.webp', '20260314_081347.webp', 
+                '20260314_081913.webp', '20260314_081959.webp', '20260314_082012.webp', '20260317_081006.webp', 
+                '20260317_123917.webp', '20260317_131333.webp', '20260317_131337.webp', '20260319_080853.webp', 
+                '20260319_100648.webp', '20260401_123353.webp', '20260401_123409.webp', '20260401_123418.webp', 
+                '20260401_123425.webp', '20260401_123500.webp', '20260409_110600.webp', '20260409_110604.webp', 
+                '20260409_110610.webp', '20260409_110617.webp', '20260409_110701.webp', '20260409_110718.webp'
             ]
         },
         {
@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Em Execução',
             category: 'execucao',
             description: 'Ampla reforma comercial e preparação técnica para nova identidade visual. O projeto inclui revitalização completa do telhado frontal e reestruturação interna.',
-            mainImg: 'assets/img/IMAGENS/OBRA-CENTRO-LABISA/TELHADOPRONTO-1.jpeg',
+            mainImg: 'assets/img/IMAGENS/OBRA-CENTRO-LABISA/TELHADOPRONTO-1.webp',
             folder: 'assets/img/IMAGENS/OBRA-CENTRO-LABISA/',
             images: [
-                '20260221_134826.jpg', '20260323_154704.jpg', '20260326_175932.jpg', '20260327_173044.jpg', 
-                '20260329_170147.jpg', '20260331_110838.jpg', '20260331_135550.jpg', '20260403_103717.jpg', 
-                '20260403_103755.jpg', '20260403_103903.jpg', '20260411_085712.jpg', '20260411_085716.jpg', 
-                '20260411_090227.jpg', '20260411_131115.jpg', '20260411_154155.jpg', '20260411_154614.jpg', 
-                'ESTRTUTURA-TELHADO.jpeg', 'TELHADOPRONTO-1.jpeg', 'TELHADOPRONTO-2.jpeg'
+                '20260221_134826.webp', '20260323_154704.webp', '20260326_175932.webp', '20260327_173044.webp', 
+                '20260329_170147.webp', '20260331_110838.webp', '20260331_135550.webp', '20260403_103717.webp', 
+                '20260403_103755.webp', '20260403_103903.webp', '20260411_085712.webp', '20260411_085716.webp', 
+                '20260411_090227.webp', '20260411_131115.webp', '20260411_154155.webp', '20260411_154614.webp', 
+                'ESTRTUTURA-TELHADO.webp', 'TELHADOPRONTO-1.webp', 'TELHADOPRONTO-2.webp'
             ]
         },
         {
@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Em Execução',
             category: 'execucao',
             description: 'Projeto versátil de reforma residencial incluindo revitalização total de barracão e casa principal, priorizando modernização de acabamentos e infraestrutura.',
-            mainImg: 'assets/img/IMAGENS/OBRA-LEBLON-REFORMA/20260211_154200.jpg',
+            mainImg: 'assets/img/IMAGENS/OBRA-LEBLON-REFORMA/20260211_154200.webp',
             folder: 'assets/img/IMAGENS/OBRA-LEBLON-REFORMA/',
             images: [
-                '20260211_154154.jpg', '20260211_154200.jpg'
+                '20260211_154154.webp', '20260211_154200.webp'
             ]
         },
         {
@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Construção de área de lazer em terreno complexo. Logística diferenciada para garantir o padrão R-SENA em área de difícil acesso.',
-            mainImg: 'assets/img/13-ObraManso.jpg',
+            mainImg: 'assets/img/13-ObraManso.webp',
             folder: 'assets/img/',
-            images: ['13-ObraManso.jpg']
+            images: ['13-ObraManso.webp']
         },
         {
             id: 'obra-juina',
@@ -83,9 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Obra de escala média no interior do estado. Provamos nossa capacidade logística de mobilizar equipe e materiais para garantir a qualidade fora da capital.',
-            mainImg: 'assets/img/14-ObraJuina.jpg',
+            mainImg: 'assets/img/14-ObraJuina.webp',
             folder: 'assets/img/',
-            images: ['14-ObraJuina.jpg', '15-ObraJuina.jpg']
+            images: ['14-ObraJuina.webp', '15-ObraJuina.webp']
         },
         {
             id: 'centro-sul',
@@ -94,9 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Revitalização de espaço comercial com troca de fachadas, pisos e instalações elétricas corporativas.',
-            mainImg: 'assets/img/16-ObraCentroSul.jpg',
+            mainImg: 'assets/img/16-ObraCentroSul.webp',
             folder: 'assets/img/',
-            images: ['16-ObraCentroSul.jpg', '17-ObraCentroSul.jpg']
+            images: ['16-ObraCentroSul.webp', '17-ObraCentroSul.webp']
         },
         {
             id: 'centro-norte',
@@ -105,9 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Manutenção estrutural e reformas em edifícios comerciais no coração da capital, com foco em segurança e preservação.',
-            mainImg: 'assets/img/18-ObraCentroNorte.jpg',
+            mainImg: 'assets/img/18-ObraCentroNorte.webp',
             folder: 'assets/img/',
-            images: ['18-ObraCentroNorte.jpg', '19-ObraCentroNorte.jpg']
+            images: ['18-ObraCentroNorte.webp', '19-ObraCentroNorte.webp']
         },
         {
             id: 'televideo',
@@ -116,9 +116,9 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Instalações comerciais e infraestrutura tecnológica. Especializada em ambientes de alta tecnologia e datacenter.',
-            mainImg: 'assets/img/20-ObraTelevideo.jpg',
+            mainImg: 'assets/img/20-ObraTelevideo.webp',
             folder: 'assets/img/',
-            images: ['20-ObraTelevideo.jpg', '21-ObraTelevideo.jpg']
+            images: ['20-ObraTelevideo.webp', '21-ObraTelevideo.webp']
         },
         {
             id: 'muro-contencao',
@@ -127,9 +127,9 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Engenharia de contenção e muros de arrimo com foco em segurança máxima e sistema de drenagem eficiente.',
-            mainImg: 'assets/img/22-ObraMuro.jpg',
+            mainImg: 'assets/img/22-ObraMuro.webp',
             folder: 'assets/img/',
-            images: ['22-ObraMuro.jpg']
+            images: ['22-ObraMuro.webp']
         }
     ];
 
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="project-status ${project.category === 'concluida' ? 'completed' : ''}">
                     ${project.status}
                 </div>
-                <img src="${project.mainImg}" alt="${project.title}">
+                <img src="${project.mainImg}" alt="${project.title}" loading="lazy">
                 <div class="project-overlay">
                     <p>${project.location}</p>
                     <h3>${project.title}</h3>
@@ -198,6 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sortedImages.forEach(imgName => {
             const thumb = document.createElement('img');
             thumb.src = project.folder + imgName;
+            thumb.loading = 'lazy';
             thumb.className = 'thumbnail' + (project.folder + imgName === project.mainImg ? ' active' : '');
             
             thumb.addEventListener('click', () => {
