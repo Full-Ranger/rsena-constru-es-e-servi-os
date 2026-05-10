@@ -178,9 +178,19 @@
         <div class="modal-content">
             <div class="modal-grid">
                 <div class="modal-gallery-container">
-                    <img id="main-modal-img" src="" alt="Destaque da obra" class="main-modal-img" loading="lazy">
-                    <div id="thumbnails-grid" class="thumbnails-grid">
-                        <!-- Thumbs go here -->
+                    <div class="carousel-container">
+                        <div id="carousel-track" class="carousel-track">
+                            <!-- As imagens serão inseridas aqui via JS -->
+                        </div>
+                        <button class="carousel-btn prev" id="carousel-prev" aria-label="Imagem Anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next" id="carousel-next" aria-label="Próxima Imagem">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div id="carousel-indicators" class="carousel-indicators">
+                            <!-- Pontos indicadores (estilo Instagram) serão inseridos aqui -->
+                        </div>
                     </div>
                 </div>
                 <div class="modal-details">

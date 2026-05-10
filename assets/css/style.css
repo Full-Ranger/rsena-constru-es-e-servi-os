@@ -810,36 +810,94 @@ nav a:hover::after {
   background: var(--grey-light);
 }
 
-.main-modal-img {
+/* Carousel Instagram Style */
+.carousel-container {
+  position: relative;
   width: 100%;
   aspect-ratio: 16/10;
-  object-fit: contain;
-  border-radius: 20px;
   background: var(--black);
-  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
 }
 
-.thumbnails-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 15px;
-  max-height: 300px;
-  overflow-y: auto;
-  padding-right: 10px;
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
-.thumbnail {
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide img {
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 10px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--white);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   cursor: pointer;
-  border: 3px solid transparent;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--black);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev { left: 15px; }
+.carousel-btn.next { right: 15px; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
   transition: var(--transition-fast);
 }
 
-.thumbnail.active {
-  border-color: var(--primary-yellow);
+.dot.active {
+  background: var(--primary-yellow);
+  transform: scale(1.2);
 }
 
 .modal-details {

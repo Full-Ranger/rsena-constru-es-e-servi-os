@@ -137,6 +137,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabBtns = document.querySelectorAll('.tab-btn');
     const modal = document.getElementById('project-modal');
     const closeModalBtn = document.querySelector('.close-modal');
+    const carouselTrack = document.getElementById('carousel-track');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    const indicatorsContainer = document.getElementById('carousel-indicators');
+    
+    let currentSlide = 0;
+    let slidesCount = 0;
     
     // --- Gallery Logic ---
     function renderProjects(filter = 'all') {
@@ -156,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>${project.location}</p>
                     <h3>${project.title}</h3>
                     <div class="view-btn">
-                        <span>Ver Imagens</span>
+                        <span>Ver Obras</span>
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
@@ -166,7 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
             galleryContainer.appendChild(card);
         });
         
-        // Trigger reveal animation for new items
         setTimeout(handleReveal, 100);
     }
 
@@ -180,35 +186,103 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modal-description').innerText = project.description;
         document.getElementById('modal-badge').innerText = project.category === 'execucao' ? 'Obra em Execução' : 'Obra Concluída';
         
-        const mainImg = document.getElementById('main-modal-img');
-        const thumbsGrid = document.getElementById('thumbnails-grid');
-        
-        mainImg.src = project.mainImg;
-        thumbsGrid.innerHTML = '';
+        // Carousel setup
+        carouselTrack.innerHTML = '';
+        indicatorsContainer.innerHTML = '';
+        currentSlide = 0;
         
         // Sort and unique images
         const sortedImages = [...new Set(project.images)].sort((a, b) => {
-            // Priority to date-like strings YYYYMMDD
             const isADate = /^\d{8}/.test(a);
             const isBDate = /^\d{8}/.test(b);
-            if(isADate && isBDate) return b.localeCompare(a); // Most recent first
+            if(isADate && isBDate) return b.localeCompare(a); 
             return a.localeCompare(b);
         });
 
-        sortedImages.forEach(imgName => {
-            const thumb = document.createElement('img');
-            thumb.src = project.folder + imgName;
-            thumb.loading = 'lazy';
-            thumb.className = 'thumbnail' + (project.folder + imgName === project.mainImg ? ' active' : '');
+        slidesCount = sortedImages.length;
+        
+        sortedImages.forEach((imgName, index) => {
+            const slide = document.createElement('div');
+            slide.className = 'carousel-slide';
+            slide.innerHTML = `<img src="${project.folder}${imgName}" alt="${project.title} - ${index + 1}" loading="lazy">`;
+            carouselTrack.appendChild(slide);
             
-            thumb.addEventListener('click', () => {
-                mainImg.src = thumb.src;
-                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
-                thumb.classList.add('active');
+            const dot = document.createElement('div');
+            dot.className = `dot ${index === 0 ? 'active' : ''}`;
+            dot.addEventListener('click', (e) => {
+                e.stopPropagation();
+                goToSlide(index);
             });
-            
-            thumbsGrid.appendChild(thumb);
+            indicatorsContainer.appendChild(dot);
         });
+
+        updateCarousel();
+        
+        // UI visibility
+        if (slidesCount <= 1) {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+            indicatorsContainer.style.display = 'none';
+        } else {
+            prevBtn.style.display = 'flex';
+            nextBtn.style.display = 'flex';
+            indicatorsContainer.style.display = 'flex';
+        }
+    }
+
+    function updateCarousel() {
+        carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+        
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        updateCarousel();
+    }
+
+    function nextSlide() {
+        if (slidesCount <= 1) return;
+        currentSlide = (currentSlide + 1) % slidesCount;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        if (slidesCount <= 1) return;
+        currentSlide = (currentSlide - 1 + slidesCount) % slidesCount;
+        updateCarousel();
+    }
+
+    prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        prevSlide();
+    });
+    
+    nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        nextSlide();
+    });
+
+    // Swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carouselTrack.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, {passive: true});
+
+    carouselTrack.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, {passive: true});
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        if (touchEndX < touchStartX - swipeThreshold) nextSlide();
+        if (touchEndX > touchStartX + swipeThreshold) prevSlide();
     }
 
     function closeModal() {
