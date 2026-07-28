@@ -254,7 +254,7 @@ nav a:hover::after {
 .hero-content {
   max-width: 900px;
   padding: 0 4rem;
-  margin-top: 100px;
+  margin-top: 180px;
   z-index: 10;
 }
 
@@ -313,8 +313,9 @@ nav a:hover::after {
 }
 
 .btn-secondary {
+  background: var(--white);
   border: 2px solid var(--white);
-  color: var(--white);
+  color: var(--black);
   padding: 1.1rem 2.5rem;
   text-decoration: none;
   font-weight: 800;
@@ -333,8 +334,9 @@ nav a:hover::after {
 }
 
 .btn-secondary:hover {
-  background: var(--white);
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
   transform: translateY(-5px);
 }
 
