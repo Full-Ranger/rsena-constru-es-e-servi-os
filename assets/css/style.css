@@ -232,7 +232,7 @@ nav a:hover::after {
   height: 100vh;
   width: 100%;
   max-width: 100%;
-  padding: 120px 0 0 0;
+  padding: 0;
   background: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.4) 100%), 
               url('../img/8-MestreDeObras.webp');
   background-size: cover;
@@ -254,6 +254,7 @@ nav a:hover::after {
 .hero-content {
   max-width: 900px;
   padding: 0 4rem;
+  margin-top: 100px;
   z-index: 10;
 }
 
