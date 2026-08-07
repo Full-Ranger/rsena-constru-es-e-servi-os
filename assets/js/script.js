@@ -8,6 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Data Management ---
     const projects = [
         {
+            id: 'residencia-florais',
+            title: 'Residência Condomínio Florais',
+            location: 'Condomínio Florais, Cuiabá - MT',
+            status: 'Em Execução',
+            category: 'execucao',
+            description: 'Construção residencial de alto padrão em condomínio fechado. Início de projeto com foco em fundação robusta, alvenaria de qualidade e acabamentos finos de alta sofisticação.',
+            mainImg: 'assets/img/IMAGENS/OBRA-FLORAIS/20260804_103641.webp',
+            folder: 'assets/img/IMAGENS/OBRA-FLORAIS/',
+            images: [
+                '20260804_103641.webp', '20260804_103631.webp', '20260804_103629.webp', '20260804_103441.webp',
+                '20260804_103439.webp', '20260804_103437.webp', '20260804_103433.webp', '20260804_103431.webp',
+                '20260804_103424.webp'
+            ]
+        },
+        {
             id: 'edmundo-italia',
             title: 'Residência Jardim Itália 2',
             location: 'Bairro Jardim Itália, Cuiabá - MT',
@@ -17,9 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mainImg: 'assets/img/IMAGENS/OBRA-EDMUNDO-ITALIA/20260401_123500.webp',
             folder: 'assets/img/IMAGENS/OBRA-EDMUNDO-ITALIA/',
             images: [
-                '20260804_103641.webp', '20260804_103631.webp', '20260804_103629.webp', '20260804_103441.webp',
-                '20260804_103439.webp', '20260804_103437.webp', '20260804_103433.webp', '20260804_103431.webp',
-                '20260804_103424.webp', '20260804_103418.webp', '20260804_095531.webp', '20260804_095522.webp',
+                '20260804_103418.webp', '20260804_095531.webp', '20260804_095522.webp',
                 '20260804_095519.webp', '20260804_095449.webp', '20260804_095447.webp', '20260804_095104.webp',
                 '20260804_095101.webp', '20260804_095053.webp', '20260804_095038.webp', '20260720_160944.webp',
                 '20260720_160804.webp', '20260720_160635.webp', '20260720_160621.webp', '20260720_160617.webp',
