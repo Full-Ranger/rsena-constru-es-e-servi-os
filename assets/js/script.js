@@ -84,8 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Construção de área de lazer em terreno complexo. Logística diferenciada para garantir o padrão R-SENA em área de difícil acesso.',
-            mainImg: 'assets/img/13-ObraManso.webp',
-            folder: 'assets/img/',
+            mainImg: 'assets/img/IMAGENS/OBRA-MANSO/13-ObraManso.webp',
+            folder: 'assets/img/IMAGENS/OBRA-MANSO/',
             images: ['13-ObraManso.webp']
         },
         {
@@ -95,8 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Obra de escala média no interior do estado. Provamos nossa capacidade logística de mobilizar equipe e materiais para garantir a qualidade fora da capital.',
-            mainImg: 'assets/img/14-ObraJuina.webp',
-            folder: 'assets/img/',
+            mainImg: 'assets/img/IMAGENS/OBRA-JUINA/14-ObraJuina.webp',
+            folder: 'assets/img/IMAGENS/OBRA-JUINA/',
             images: ['14-ObraJuina.webp', '15-ObraJuina.webp']
         },
         {
@@ -106,9 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Revitalização de espaço comercial com troca de fachadas, pisos e instalações elétricas corporativas.',
-            mainImg: 'assets/img/16-ObraCentroSul.webp',
-            folder: 'assets/img/',
-            images: ['16-ObraCentroSul.webp', '17-ObraCentroSul.webp']
+            mainImg: 'assets/img/IMAGENS/OBRA-CENTRO-SUL/16-ObraCentroSul.webp',
+            folder: 'assets/img/IMAGENS/OBRA-CENTRO-SUL/',
+            images: [
+                '16-ObraCentroSul.webp', '17-ObraCentroSul.webp', 'IMG_20220416_131230827.webp',
+                'IMG_20220416_143325214.webp', 'IMG_20220416_143330841.webp', 'IMG_20220416_143931779.webp'
+            ]
         },
         {
             id: 'centro-norte',
@@ -117,8 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Manutenção estrutural e reformas em edifícios comerciais no coração da capital, com foco em segurança e preservação.',
-            mainImg: 'assets/img/18-ObraCentroNorte.webp',
-            folder: 'assets/img/',
+            mainImg: 'assets/img/IMAGENS/OBRA-CENTRO-NORTE/18-ObraCentroNorte.webp',
+            folder: 'assets/img/IMAGENS/OBRA-CENTRO-NORTE/',
             images: ['18-ObraCentroNorte.webp', '19-ObraCentroNorte.webp']
         },
         {
@@ -128,8 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Instalações comerciais e infraestrutura tecnológica. Especializada em ambientes de alta tecnologia e datacenter.',
-            mainImg: 'assets/img/20-ObraTelevideo.webp',
-            folder: 'assets/img/',
+            mainImg: 'assets/img/IMAGENS/OBRA-TELEVIDEO/20-ObraTelevideo.webp',
+            folder: 'assets/img/IMAGENS/OBRA-TELEVIDEO/',
             images: ['20-ObraTelevideo.webp', '21-ObraTelevideo.webp']
         },
         {
@@ -139,8 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Concluída',
             category: 'concluida',
             description: 'Engenharia de contenção e muros de arrimo com foco em segurança máxima e sistema de drenagem eficiente.',
-            mainImg: 'assets/img/22-ObraMuro.webp',
-            folder: 'assets/img/',
+            mainImg: 'assets/img/IMAGENS/OBRA-MURO/22-ObraMuro.webp',
+            folder: 'assets/img/IMAGENS/OBRA-MURO/',
             images: ['22-ObraMuro.webp']
         }
     ];
