@@ -8,15 +8,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Data Management ---
     const projects = [
         {
+            id: 'obra-chapada',
+            title: 'Obra Chapada dos Guimarães',
+            location: 'Chapada dos Guimarães - MT',
+            status: 'Em Execução',
+            category: 'execucao',
+            description: 'Construção residencial de alto padrão em Chapada dos Guimarães. Execução cuidadosa da fundação, perfurações profundas, concretagem e estruturação de alvenaria e pilares reforçados.',
+            mainImg: 'assets/img/IMAGENS/OBRA-CHAPADA/20260902_141943.jpg.webp',
+            folder: 'assets/img/IMAGENS/OBRA-CHAPADA/',
+            images: [
+                '20260902_141943.jpg.webp', '20260902_141122.jpg.webp',
+                '1ce30f84-ac68-4817-9941-d608fa8f5d42.jpg', '26584662-cf23-4782-807c-534d799d6355.jpg',
+                '49cd63bf-9655-4d71-b3b6-09b6605fbf23.jpg', '4d6cce3b-cb83-42ba-8993-6b0d085e25e3.jpg',
+                '6a4b00f4-5802-4dab-a393-a02f2e6989f5.jpg', '7c77cc27-41ff-4bc9-a95b-3e9ff833dadc.jpg',
+                '7e874bdb-6b66-49f9-93eb-ae72aac92233.jpg', '9eb82d28-e3ae-4d87-a23c-8197fd58dffa.jpg',
+                'a24753a4-a84d-4a3d-971a-a8aec13b93e4.jpg', 'abed54e3-17bc-4025-b1ce-0aeaad641d37.jpg',
+                'ad53ef65-18f4-4120-8059-b052b3e63b5f.jpg', 'ba1833dc-7a71-4b4f-9a32-ecfb2d21c068.jpg',
+                'cecff25d-8229-48bc-b11f-aa043b1e4a08.jpg', 'f03059fa-6150-4cee-9874-7f426ddc3c68.jpg'
+            ]
+        },
+        {
             id: 'residencia-florais',
             title: 'Residência Condomínio Florais',
             location: 'Condomínio Florais, Cuiabá - MT',
-            status: 'Em Execução',
-            category: 'execucao',
-            description: 'Construção residencial de alto padrão em condomínio fechado. Início de projeto com foco em fundação robusta, alvenaria de qualidade e acabamentos finos de alta sofisticação.',
-            mainImg: 'assets/img/IMAGENS/OBRA-FLORAIS/20260804_103641.webp',
+            status: 'Concluída',
+            category: 'concluida',
+            description: 'Construção residencial de alto padrão em condomínio fechado. Obra executada do alicerce ao acabamento fino com ampla garagem, pavimentação moderna com pedras e alto padrão de sofisticação.',
+            mainImg: 'assets/img/IMAGENS/OBRA-FLORAIS/IMG_0608.webp',
             folder: 'assets/img/IMAGENS/OBRA-FLORAIS/',
             images: [
+                'IMG_0608.webp', 'IMG_0607.webp',
                 '20260804_103641.webp', '20260804_103631.webp', '20260804_103629.webp', '20260804_103441.webp',
                 '20260804_103439.webp', '20260804_103437.webp', '20260804_103433.webp', '20260804_103431.webp',
                 '20260804_103424.webp', '20260804_103418.webp', '20260723_101325.webp', '20260723_101323.webp',
@@ -27,44 +48,46 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'edmundo-italia',
             title: 'Residência Jardim Itália 2',
             location: 'Bairro Jardim Itália, Cuiabá - MT',
-            status: 'Em Execução',
-            category: 'execucao',
-            description: 'Projeto de reforma integral e modernização completa. Inclui construção de piscina personalizada e criação de área gourmet externa com acabamento de alto padrão de luxo.',
-            mainImg: 'assets/img/IMAGENS/OBRA-EDMUNDO-ITALIA/20260401_123500.webp',
+            status: 'Concluída',
+            category: 'concluida',
+            description: 'Projeto de reforma integral e modernização completa. Inclui construção de piscina personalizada, nova cobertura e criação de área gourmet de alto luxo com iluminação planejada e acabamentos nobres.',
+            mainImg: 'assets/img/IMAGENS/OBRA-EDMUNDO-ITALIA/IMG_0106.webp',
             folder: 'assets/img/IMAGENS/OBRA-EDMUNDO-ITALIA/',
             images: [
-                '20260804_095531.webp', '20260804_095522.webp',
-                '20260804_095519.webp', '20260804_095449.webp', '20260804_095447.webp', '20260804_095104.webp',
-                '20260804_095101.webp', '20260804_095053.webp', '20260804_095038.webp', '20260720_160944.webp',
-                '20260720_160804.webp', '20260720_160635.webp', '20260720_160621.webp', '20260720_160617.webp',
-                '20260713_092028.webp', '20260519_131213.webp', '20260513_102542.webp', '20260513_102540.webp',
-                '20260513_102537.webp', '20260512_103806.webp', '20260512_103757.webp', '20260512_095859.webp',
-                '20260512_095855.webp', '20260512_090022.webp', '20260512_084011.webp', '20260430_101628.webp',
-                '20260429_093300.webp', '20260427_143257.webp', '20260424_094500.webp', '20260409_110718.webp',
-                '20260409_110701.webp', '20260409_110617.webp', '20260409_110610.webp', '20260409_110600.webp',
-                '20260401_123500.webp', '20260401_123425.webp', '20260401_123418.webp', '20260401_123409.webp',
-                '20260401_123353.webp', '20260319_100648.webp', '20260319_080853.webp', '20260317_131337.webp',
-                '20260317_131333.webp', '20260317_123917.webp', '20260317_081006.webp', '20260314_082012.webp',
-                '20260314_081959.webp', '20260314_081913.webp', '20260314_081347.webp', '20260314_081339.webp',
-                '20260311_140253.webp', '20260311_100741.webp', '20260311_100731.webp', '20260309_152009.webp',
-                '20260218_124723.webp', '20260210_162456.webp', '20260130_141010.webp', '20260130_082129.webp',
-                '20260130_082126.webp', '20260128_113327.webp', '20260127_142648.webp', '20260122_082547.webp',
-                '20260121_152452.webp', '20260121_152437.webp', '20260116_143556.webp', '20260116_143548.webp',
-                '20260113_094433.webp', '20260113_094428.webp', '20260112_124139.webp', '20260112_103354.webp',
-                '20260109_172701.webp', '20260109_172656.webp', '20260106_104250.webp', '20251218_105557.webp',
-                '20251218_105412.webp', '20251218_092813.webp', '20251218_092808.webp', '20251212_170538.webp',
-                '20251212_170513.webp', '20251212_154037.webp', '20251212_154024.webp', '20251212_154005.webp',
-                '20251211_093824.webp', '20251210_082758.webp', '20251209_164202.webp', '20251204_132224.webp',
-                '20251204_132207.webp', '20251203_163329.webp', '20251202_103048.webp', '20251128_133150.webp',
-                '20251128_131219.webp', '20251124_102048.webp'
+                'IMG_0161.webp', 'IMG_0160.webp', 'IMG_0110.webp', 'IMG_0109.webp', 'IMG_0106.webp',
+                'IMG_0064.webp', 'IMG_0049.webp', 'IMG_0047.webp', '20260812_101407.webp', '20260812_101031.webp',
+                '20260804_095531.webp', '20260804_095522.webp', '20260804_095519.webp', '20260804_095449.webp',
+                '20260804_095447.webp', '20260804_095104.webp', '20260804_095101.webp', '20260804_095053.webp',
+                '20260804_095038.webp', '20260720_160944.webp', '20260720_160804.webp', '20260720_160635.webp',
+                '20260720_160621.webp', '20260720_160617.webp', '20260713_092028.webp', '20260519_131213.webp',
+                '20260513_102542.webp', '20260513_102540.webp', '20260513_102537.webp', '20260512_103806.webp',
+                '20260512_103757.webp', '20260512_095859.webp', '20260512_095855.webp', '20260512_090022.webp',
+                '20260512_084011.webp', '20260430_101628.webp', '20260429_093300.webp', '20260427_143257.webp',
+                '20260424_094500.webp', '20260409_110718.webp', '20260409_110701.webp', '20260409_110617.webp',
+                '20260409_110610.webp', '20260409_110604.webp', '20260409_110600.webp', '20260401_123500.webp',
+                '20260401_123425.webp', '20260401_123418.webp', '20260401_123409.webp', '20260401_123353.webp',
+                '20260319_100648.webp', '20260319_080853.webp', '20260317_131337.webp', '20260317_131333.webp',
+                '20260317_123917.webp', '20260317_081006.webp', '20260314_082012.webp', '20260314_081959.webp',
+                '20260314_081913.webp', '20260314_081347.webp', '20260314_081339.webp', '20260311_140253.webp',
+                '20260311_100741.webp', '20260311_100731.webp', '20260309_152009.webp', '20260218_124723.webp',
+                '20260210_162456.webp', '20260130_141010.webp', '20260130_082129.webp', '20260130_082126.webp',
+                '20260128_113327.webp', '20260127_142648.webp', '20260122_082547.webp', '20260121_152452.webp',
+                '20260121_152437.webp', '20260116_143556.webp', '20260116_143548.webp', '20260113_094433.webp',
+                '20260113_094428.webp', '20260112_124139.webp', '20260112_103354.webp', '20260109_172701.webp',
+                '20260109_172656.webp', '20260106_104250.webp', '20251218_105557.webp', '20251218_105412.webp',
+                '20251218_092813.webp', '20251218_092808.webp', '20251212_170538.webp', '20251212_170513.webp',
+                '20251212_154037.webp', '20251212_154024.webp', '20251212_154005.webp', '20251211_093824.webp',
+                '20251210_082758.webp', '20251209_164202.webp', '20251204_132224.webp', '20251204_132207.webp',
+                '20251203_163329.webp', '20251202_103048.webp', '20251128_133150.webp', '20251128_131219.webp',
+                '20251124_102048.webp'
             ]
         },
         {
             id: 'centro-labisa',
             title: 'Renovação Comercial Labisa',
             location: 'Centro, Cuiabá - MT',
-            status: 'Em Execução',
-            category: 'execucao',
+            status: 'Concluída',
+            category: 'concluida',
             description: 'Ampla reforma comercial e preparação técnica para nova identidade visual. O projeto inclui revitalização completa do telhado frontal e reestruturação interna.',
             mainImg: 'assets/img/IMAGENS/OBRA-CENTRO-LABISA/TELHADOPRONTO-1.webp',
             folder: 'assets/img/IMAGENS/OBRA-CENTRO-LABISA/',
@@ -226,13 +249,17 @@ document.addEventListener('DOMContentLoaded', () => {
         indicatorsContainer.innerHTML = '';
         currentSlide = 0;
         
-        // Sort and unique images
-        const sortedImages = [...new Set(project.images)].sort((a, b) => {
+        // Sort and unique images, placing mainImg first
+        const mainImgName = project.mainImg.split('/').pop();
+        let sortedImages = [...new Set(project.images)].sort((a, b) => {
             const isADate = /^\d{8}/.test(a);
             const isBDate = /^\d{8}/.test(b);
             if(isADate && isBDate) return b.localeCompare(a); 
             return a.localeCompare(b);
         });
+        if (mainImgName && sortedImages.includes(mainImgName)) {
+            sortedImages = [mainImgName, ...sortedImages.filter(img => img !== mainImgName)];
+        }
 
         slidesCount = sortedImages.length;
         
